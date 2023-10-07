@@ -1,17 +1,11 @@
-function TodoList() {
-    
-    return (
-        <div>
-            <form>
-                <label htmlFor="input">Add a new item</label>
-                <input type="text" name="" id="" />
-            </form>
-            <div>
-                <h1>LIST OF TODOS</h1>
+import Calculator from "./Calculator";
 
-            </div>
+function UserReducer() {
+    return (
+        <div className="h-screen flex flex-col items-center justify-center">
+            <Calculator />
         </div>
     );
 }
 
-export default TodoList;
+export default UserReducer;
