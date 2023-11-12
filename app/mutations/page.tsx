@@ -10,7 +10,7 @@ async function Mutations() {
         <div className="h-screen">
             <h1 className="text-2xl bg-orange-700 text-white px-1">This is a section to learn server actions</h1>
             <div className="flex h-screen flex-col  items-center">
-                <ShowTodos todos={todos} />
+                <ShowTodos todosx={todos} />
             </div>
 
         </div>

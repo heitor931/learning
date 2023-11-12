@@ -12,7 +12,6 @@ datasource db {
 
 model Todo {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-
-  todoId    String
+  todoId    String  @unique
   todoTitle String
 }

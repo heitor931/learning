@@ -9,9 +9,21 @@ export const addTodo = async (newTodo: ITodo) => {
         await prisma.todo.create({
             data: newTodo
         })
+
     } catch (error) {
         revalidatePath("/mutations")
     } finally {
-        revalidatePath("/mutations")
+        //revalidatePath("/mutations")
+    }
+}
+export const deleteTodo = async () => {
+
+    try {
+        await prisma.todo.deleteMany({
+
+        })
+//revalidatePath("/mutations")
+    } catch (error) {
+//revalidatePath("/mutations")
     }
 }
